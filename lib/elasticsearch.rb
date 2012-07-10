@@ -23,7 +23,7 @@ module ElasticSearch
       # builder.response :logger
       builder.response :json, :content_type => /\bjson$/
 
-      builder.adapter :excon
+      builder.adapter :httpclient
     end
   end
 
